@@ -1,0 +1,22 @@
+/* pages/scanCode/scanCode.wxss */
+.container{
+  height: 100vh;
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+}
+.pass-title,.tips{
+  font-size: 32rpx;
+  padding: 60rpx;
+  flex: 1;
+}
+.pass-content{
+  font-size: 200rpx;
+  font-weight: 600;
+  flex: 8;
+}
+text{
+  color: #b9dd08;
+}

@@ -1,0 +1,18 @@
+<!--pages/my/my.wxml-->
+<view class='container'>
+  <view class='userInfo'>
+    <block wx:if="{{userInfo.img}}">
+      <image src="{{userInfo.img}}"></image>
+    </block>
+    <view>{{userInfo.nikeName}}</view>
+  </view>
+
+  <block wx:if="{{userInfo.img}}">
+    <view class='wallet' bindtap='wallet'>
+      <view class='myWallet'>我的钱包</view>
+      <view>></view>
+    </view>
+  </block>
+
+  <button bindtap='login' type='{{btnType}}'>{{actionText}}</button>
+</view>
